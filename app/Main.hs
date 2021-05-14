@@ -31,7 +31,7 @@ main = do
 
 
 -- |
--- genBytes takes an initial generator, `StdGen` and then produces bytestring
+-- genBytes takes an initial generator, `StdGen`, and then produces a bytestring
 -- to be consumed upstream.
 genBytes :: StdGen -> Producer ByteString IO ()
 genBytes gen = do
@@ -41,7 +41,7 @@ genBytes gen = do
   genBytes gen'
 
 -- |
--- `genEntropy` gives a source of randomness using the system time. As such,
+-- genEntropy gives a source of randomness using the system time. As such,
 -- it is not cryptographically secure.
 genEntropy :: IO Int
 genEntropy = do
