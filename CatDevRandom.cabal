@@ -1,0 +1,30 @@
+cabal-version:      3.0
+category:           Languages
+build-type:         Simple
+name:               CatDevRandom
+synopsis:           A clone of cat /dev/random
+version:            0.1.0
+
+
+executable exe
+
+  main-is:
+      Main.hs
+
+  ghc-options:
+      -Wall
+
+  hs-source-dirs:
+      app/
+
+  build-depends:
+      base
+    , bytestring
+    , pipes
+    , pipes-bytestring
+    , random            >= 1.2
+    , time
+
+
+
+
