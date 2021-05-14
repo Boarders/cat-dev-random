@@ -1,0 +1,7 @@
+packages:
+  - .
+
+extra-deps:
+  - random-1.2.0
+
+resolver: lts-17.11
